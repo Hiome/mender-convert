@@ -65,5 +65,7 @@ RUN cp $GOPATH/src/github.com/mendersoftware/mender/mender /
 
 WORKDIR /
 
+COPY . /mender-convert/
+
 COPY docker-entrypoint.sh /usr/local/bin/
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
