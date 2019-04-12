@@ -137,7 +137,7 @@ install_files() {
 
   # dtoverlays seems to break U-boot for some reason, simply remove all of
   # them as they do not actually work when U-boot is used.
-  sed -i /^dtoverlay=/d ${output_dir}/config.txt
+  # sed -i /^dtoverlay=/d ${output_dir}/config.txt
 
   sudo cp ${output_dir}/config.txt ${boot_dir}/config.txt
 
