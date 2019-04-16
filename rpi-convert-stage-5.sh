@@ -34,7 +34,7 @@ build_uboot_files() {
   local CROSS_COMPILE=${1}-
   local ARCH=arm
   local branch="mender-rpi-2018.07"
-  local commit="981cc831e3"
+  local commit="75c8cda7478715152ebffd398903dc76ce5ef2da"
   local uboot_repo_vc_dir=$uboot_dir/.git
   local defconfig="rpi_3_32b_defconfig"
 
@@ -50,7 +50,7 @@ build_uboot_files() {
   log "\tBuilding U-Boot related files."
 
   if [ ! -d $uboot_repo_vc_dir ]; then
-    git clone https://github.com/mendersoftware/uboot-mender.git -b $branch >> "$build_log" 2>&1
+    git clone https://github.com/hiome/uboot-mender.git -b $branch >> "$build_log" 2>&1
   fi
 
   cd $uboot_dir

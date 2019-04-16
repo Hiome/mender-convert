@@ -73,7 +73,7 @@ build_env_lock_boot_files() {
   mkdir -p $grubenv_dir
 
   if [ ! -d $grubenv_repo_vc_dir ]; then
-    git clone https://github.com/mendersoftware/grub-mender-grubenv.git $grubenv_dir >> "$build_log" 2>&1
+    git clone https://github.com/hiome/grub-mender-grubenv.git $grubenv_dir >> "$build_log" 2>&1
   fi
   cd $grubenv_dir
 
