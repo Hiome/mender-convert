@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
     autotools-dev \
     libtool \
     pkg-config \
+    liblzma-dev \
     python \
 # for mender-convert to run (mkfs.vfat is required for boot partition)
     sudo \
